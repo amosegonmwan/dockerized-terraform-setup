@@ -14,5 +14,5 @@ RUN apt-get update && apt-get install -y wget && \
 
 COPY main.tf /data
 
-ENTRYPOINT [ "terraform" ]
-CMD ["-h" ]
+ENTRYPOINT [ "" ]
+CMD ["terraform", "-h" ]
